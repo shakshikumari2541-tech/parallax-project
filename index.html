@@ -1,234 +1,630 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Rise of Artificial Intelligence</title>
+<link href="https://fonts.cdnfonts.com/css/nazi-typewriter" rel="stylesheet">
+                
+  
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/michellefont" type="text/css"/>
+  
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/fairfax-hd" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
 
-  <!-- Futuristic Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-
+<title> AI Knowledge Hub by Kris Kosta </title>
   <style>
-  * {
-    box-sizing: border-box;
-  }
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #020d18;
-    overflow-x: hidden;
+  
+
+  @import "compass/css3";
+
+@font-face {
+  font-family: "NaziTypewriterRegular";
+  src: url("/assets/fonts/nazi-typewriter/ee195bc316e4812b6313684035d04d99/78fb62f2a38b445a75849a938c4ad710/NaziTypewriterRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html,
+body{
+  background-color: #460106;
+ 
+  
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 45%;  /* Slightly higher vertical position */
+    left: 65%; /* Perfect horizontal center */
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: white;
-  }
+    font-size: 7rem;  /* Larger base size */
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.9);  /* Stronger shadow */
+    z-index: 10;
+    white-space: nowrap; /* Prevents text wrapping */
+    font-family: 'Orbitron', sans-serif;
 
-  /* ========== PARALLAX ========== */
-  .parallax {
-    perspective: 100px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -1500px;
-  }
+}
 
-  .p__layer {
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-  }
+.hero-text h1 {
+    margin: 0;
+    line-height: 1.1;  /* Tighter line spacing */
+    font-size: inherit;
+}
 
-  .p__layer > img {
+@media (max-width: 1400px) {
+    .hero-text {
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-text {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        font-size: 3rem;
+        white-space: normal; /* Allow wrapping on very small screens */
+    }
+}
+
+
+.parallax {
+  perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+margin-left: -1500px;
+}
+
+.p__layer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;}
+  
+ .p__layer > img{
     display: block;
     position: absolute;
     bottom: 0;
+}
+
+.p__layer__1{margin-top: 300px;}
+
+.p__layer__2{margin-top: -100px;}
+   .p__layer__3{margin-top: 100px;}
+
+
+.cover{
+  background:
+  linear-gradient( #2D112B, black,  #38024f,  #38024f,  #38024f, #38024f);
+  display: block;
+  position: absolute;
+  //height: 8000px;
+  height: fit-contnet;
+  z-index: 2;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: -20px;
+}
+
+$p__layers: 4;
+
+@for $i from 0 through $p__layers {
+  $x: ($p__layers - $i) / 2;
+  .p__layer__#{$i}{
+     transform: translateZ(-100 * $x#{px}) scale($x + 1);
+  }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+//background: #f1f120;
+  background: black;
+ //background-image: linear-gradient(#f1f120, black);
+  border-radius: 0px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+border-radius: 0px;
+background: red;
+}
+
+
+section
+{box-shadow: inset 10px 10px 10px rgba(0, 0, 0,11.5);
+margin-top: 0px;
+margin: 0;
+width: 1000px;
+background-color: black;
+padding: 50px;
+padding-top: 0px;
+padding-bottom: auto;
+border-radius: 30px;
+margin-left: 1000px;
+}
+
+article0{
+   width: auto;
+  postion: center;
+  margin-left: 0, auto;
+  margin-right: 0, auto;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   font-size: auto;
+  padding: 60px;
+  background: url("https://img.pikbest.com/wp/202409/old-vintage-paper-texture-black-with-blank-background_9944384.jpg!w700wp");
+  background-repeat: no-repeat; 
+  background-size: cover;
+ 
+}
+
+article1
+{
+  border: gray;
+  background: #aaaa;
+  margin: 10px, auto;
+  padding: 50px;
+ 
+  width: auto;
+  postion: center;
+  margin-left: 0, auto;
+  margin-right: 0, auto;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   font-size: auto;
+}
+
+
+article1White
+{
+  border: black;
+ background: white;
+  margin: 10px, auto;
+  padding: 30px;
+  margin-top: 40px;
+
+  width: 100%;
+  postion: center;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,1.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   font-size: auto;
+}
+
+
+article1Vid
+{
+  border: black;
+ background:black;
+  margin: 10px, auto;
+  padding: 5px;
+  margin-top: 40px;
+
+  width: 100%;
+  postion: center;
+  border-radius: 10px;
+  box-shadow: inset 10px 10px 10px 10px rgba(0,0,0,1.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   font-size: auto;
+}
+
+
+article2
+{
+  border: gray;
+  background: #aaaa;
+  margin: 10px, auto;
+  margin-top: 50px;
+  padding: auto;
+  width: auto;
+  margin-left: 0, auto;
+  margin-right: 0, auto;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+  display: flex;
+  ffex-direction: row;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+article3
+{
+  border: gray;
+  background: #aaaa;
+  margin: 10px, auto;
+  padding: 30px;
+  margin-left: 50, auto;
+  margin-right: 50, auto;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+  display: flex;
+  flex-wrap: wrap;
+  
+  width: 100%;
+}
+
+  
+
+
+
+/*-------------GRIDS-------------  */
+.grids1 {
+  grid-area: myArea;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+
+}
+
+.grid-container > div {
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px;
+  border: black;
+  margin: 20px;
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,1.5);
+}
+
+
+.grid-container > div:hover{
+  cursor: pointer;
+}
+
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+
+}
+
+.grid-container2 > div {
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px;
+  border: black;
+  margin: 20px;
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,1.5);
+}
+
+
+
+h2
+{
+   font-family: 'Nazi Typewriter', sans-serif !important;
+  margin-left: 30%;
+   margin-right: 20%;
+  color: white;
+}
+
+h3{
+  font-family: 'Nazi Typewriter', sans-serif !important;
+  margin-left: 20%;
+   margin-right: 20%;
+  color: white;
+}
+
+h3 + h3 {
+  text-indent: 170px;
+  margin-top: 0px;
+}
+
+h4{
+  font-family: 'Nazi Typewriter', sans-serif !important;
+  margin-left: 0px;
+   margin-right: 0px;
+  color: black;
+  text-indent: 200px;
+}
+
+p{
+font-size: 20px;
+font-family: 'IBM Plex Mono', monospace;
+ color: black;
+}
+
+ a > img {
+  width: 100%;
+  height: auto;
   }
 
-  .p__layer__0 img { margin-left: 550px; width: 80%; }
-  .p__layer__1 img { margin-left: 330px; width: 1000px; height: 500px; }
-  .p__layer__2 img { margin-left: 1300px; width: 1400px; height: 500px; }
-  .p__layer__3 img { margin-left: -150px; width: 2000px; height: 650px; }
+p1{
+  border: black;
+   background: white; 
+  margin-top: 60px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,1.5);
+   padding: 30px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,1.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   font-size: auto;
+}
 
-  .cover {
-    background: linear-gradient(#00111a, #000000, #0a84ff);
-    position: absolute;
-    height: fit-content;
-    z-index: 2;
-    top: 100%;
-    
-    left: 0;
-    right: 0;
-    margin-top: -20px;
-  }
 
-  /* Scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #0a84ff;
-  }
-  ::-webkit-scrollbar-track {
-    background: black;
-  }
 
-  /* ========== SECTIONS ========== */
-  section {
-    margin: 0 auto;
-    width: 1000px;
-    background-color: black;
-    padding: 50px;
-    border-radius: 30px;
-    margin-top: 100px;
-    box-shadow: inset 10px 10px 20px rgba(0,0,0,1);
-  }
+footer{
+  background: black;
+  color: white;
+  padding: 10px;
+  width: 5%;
+  margin: auto;
+  width: 40vw;
+  justify-content: center;
+  display: flex;
+  border-radius: 15px;
+  margin-left: 1150px;
 
-  article {
-    background: linear-gradient(#00111a, #0d1f2d);
-    color: white;
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: inset 0 0 15px rgba(0,0,0,.6);
-    margin-bottom: 40px;
-  }
+}
 
-  article.white {
-    background: white;
-    color: black;
-  }
 
-  article img {
-    width: 100%;
-    border-radius: 10px;
-  }
 
-  /* GRID */
+@media(max-width: 900px){
+/* width */
+::-webkit-scrollbar {
+width: 0px;
+}
+  .cover{display: flex; flex-wrap: wrap; justify-content: center; padding: 0px;  background:
+  linear-gradient( #2D112B, black,  #38024f); height: 3200px;}
+  section{padding: 0px;  margin-left: auto; width: 100vw; height: 100vh; margin-top: 400px; background: transparent; box-shadow: none;}
+  article0{width: 100vw; border: solid black 20px; margin: 0px; font-size: 14px; padding: 20px;}
+  p{font-size: 20px;}
+  h2, h3, h4{margin: 0px; margin-top: 14px; margin-bottom: 14px; padding: 0px; margin-left: auto; margin-right: auto; text-indent: 0px;}
+  
   .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 1px;}
+  
+.grid-container > div {
+  box-shadow: 1px 1px 5px;
+  margin: 8px;
+  max-width: 200px;
+  font-size: 20px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,1.5);}
 
-  .grid-container div {
-    background: white;
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: inset 0 0 10px rgba(0,0,0,1.2);
-    transition: transform 0.3s ease;
-  }
+  
+  .p__layer__0{background-size: cover; width: 300vw; margin-top: 0px; margin-left: 500px;}
+  
+  .parallax {
+    //background: linear-gradient(#9f100d, #9f100d, #460106); background-size: cover;
+    background:#9f100d;
+    padding-top:0px; 
+}
+  
+  footer{margin-bottom: 0px; width: 100vw; visibility: hidden;}}
 
-  .grid-container div:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
+@media(max-width:550px){
+   p{font-size: 14px;}
+.p__layer__0{background-size: cover; width: 300vw; margin-top: 500px; margin-left: 1000px;}
 
-  /* TEXT STYLES */
-  h1, h2, h3, h4 {
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    color: #00ffff;
-  }
+ .p__layer__2{margin-top: -600px;  position: absolute; display: block; margin-left: -1040px;filter: brightness(300%);}
+   .p__layer__3{margin-top: 100px;  position: absolute; display: block; }
+   .p__layer__4{margin-top: 500px;  position: absolute; display: block; }
 
-  p {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 18px;
-    line-height: 1.6;
-  }
+  
+}
 
-  footer {
-    background: black;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 60px;
-  }
 
-  /* RESPONSIVE */
-  @media(max-width:900px){
-    section { width: 90vw; padding: 20px; }
-    .grid-container { grid-template-columns: 1fr; }
-    p { font-size: 16px; }
-  }
+
+
   </style>
-</head>
+  </head>
 <body>
 
-<!-- ===== PARALLAX LAYERS ===== -->
 <div class="parallax">
   <div class="p__layer p__layer__0">
-    <img src="ai network background.jpg" alt="AI network background" />
-  </div>
-  <div class="p__layer p__layer__1">
-    <img src="brain circuit.png" alt="Brain Circuit" />
-  </div>
-  <div class="p__layer p__layer__2">
-    <img src="Robot silhouette.png" alt="Robot silhouette" />
-  </div>
-  <div class="p__layer p__layer__3">
-    <img src="digital city.jpeg" alt="Digital City" />
-  </div>
+        <img src="https://i.pinimg.com/originals/a3/6f/62/a36f624c1a112a5ab50d831d633d4073.gif" width="80%" style="margin-left:550px"  />
+    </div>
+    <div class="p__layer p__layer__1">
+        <img src="https://i.ibb.co/L80XGs6/7136296-preview.png"  width="1000px" height="500px" style="margin-left: 330px"/>
+    </div>
+    <div class="p__layer p__layer__2">
+        <img src="https://www.pinclipart.com/picdir/big/416-4162959_2363-x-787-21-0-skyline-city-silhouette.png"  width= "1400px" height="500px" style="margin-left: 1300px">
+    </div>
+    <div class="p__layer p__layer__3">
+        <img src="https://i.ibb.co/56LMHtK/new-york-skyline-silhouette-png-6.png" width= "2000px" height="650px" style="margin-left: -150px"/>
+    </div>
+    <div class="p__layer p__layer__4">
+        <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_6.png?raw=true" style: "margin-bottom: -140px" />
+    </div>
 
-  <div class="cover">
-
-    <br><br><br><br><br><br><br>
-
-    <!-- ===== SECTION 1 ===== -->
+  <!-- Hero Text Overlay -->
+    <div class="hero-text">
+      <h1>Artificial<br>Intelligence?</h1>
+    </div>
+    <div class="cover">
+      
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+      
+      
+      
+       <section>
+  
+<br>
+<br>
+   
+       <article0> <h2>Let's explore the fundamentals</h2>
+<article1>
+      <p>Artificial Intelligence can seem like a complex and intimidating field. From machine learning algorithms to neural networks, from natural language processing to computer vision - the world of AI encompasses technologies that are transforming every aspect of our digital lives. More importantly, understanding AI fundamentals helps you appreciate how these systems learn, adapt, and make decisions! </p> </article1>
+         
+   <br>
+   <br>
+    <h2><b>Here's what you'll need to know about AI</b></h2>
+   
+      
+    <div class="grid-container">
+      
+  <div class="item1">
+    <a href="https://cloud.google.com/learn/what-is-artificial-intelligence"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&h=688" target="_blank"  height="400" width="600" alt="AI Brain"> </a>
+        <p>What is Artificial Intelligence and how does it work?</p></div>
+      
+  <div class="item2">
+   <a href="https://www.geeksforgeeks.org/artificial-intelligence/what-is-artificial-intelligence-ai/">  <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&h=688" alt="Machine Learning"> </a>
+        <p>Understanding Machine Learning and Deep Learning algorithms
+    </p></div>
+  <div class="item3">
+    <a href="https://www.simplyblock.io/blog/image-recognition-with-neural-networks/"> <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&h=688" height="600" width="600" alt="Neural Networks"> </a>
+        <p>How do Neural Networks process information?</p></div>  
+      
+  <div class="item4">
+           <a href="https://www.dragonspears.com/blog/fundamentals-of-ai-development">  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&h=688"  height="500" width="600" alt="Data Processing"> </a>
+        <p>Data Collection and AI Model Training</p></div>
+      
+  <div class="item5">  <a href="https://aws.amazon.com/what-is/artificial-intelligence/">  <img src="data:image/jpeg;base64,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" height="400" width="600" alt="AI Applications"> </a>
+        <p>Real-world AI applications transforming industries</p></div>
+      
+  <div class="item6">  <a href="https://www.ntiva.com/blog/ai-101-fundamentals-of-artificial-intelligence"> <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&h=688"  height="400" width="600" alt="Future AI"> </a>
+        <p>The future of AI and emerging technologies</p></div>
+        </article0>
+       
+       
+       <br>
+</section>
+    
+    <br> <br> <br> <br> <br>
+    
+    
     <section>
-      <h2>The Rise of Artificial Intelligence</h2>
-      <article>
-        <p>From self-learning machines to creative neural networks, Artificial Intelligence has rapidly transformed from science fiction into everyday reality. It is redefining how humans interact with technology — powering cars, conversations, art, and entire industries.</p>
-      </article>
+  
+<br>
+<br>
+   
+       <article0>
+    
+    <h2>Understanding AI Technology</h2>
+<article1>
+      <p>You might be wondering how machines can suddenly recognize faces, understand human speech, and make complex decisions like humans? Well, that's because of artificial neural networks and machine learning algorithms! These systems learn from vast amounts of data and identify patterns that enable intelligent behavior. At this point, let's dive into the fascinating details of how AI actually works.
+</p>
+      </article1>
+   
+    <article1White>
+    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&h=400" height="auto" width="100%" alt="Neural Network">
+        <p> A neural network consists of interconnected nodes (neurons) that process information through multiple layers. These networks learn by adjusting connections between neurons based on training data, enabling them to recognize patterns, make predictions, and solve complex problems that traditional programming cannot handle effectively. </p>
+    </article1White>
+   
+    
+    
+     
+    <article1Vid> <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&h=500"  height="auto" width="100%" alt="AI Processing">
+         </article1Vid>
+    <h3>
+    An AI system processing complex data patterns
+    </h3>
+    <h3> (visualization of machine learning) </h3>
+    
+    
+    
+    <article1White>
+      <p>Machine learning is the foundation of modern AI. It allows computers to learn from data without being explicitly programmed for every task. These systems use algorithms to analyze patterns, make predictions, and improve their performance over time. From supervised learning with labeled data to unsupervised learning that discovers hidden patterns, ML algorithms power everything from recommendation systems to autonomous vehicles.   
+</p>
+      </article1White>
+  
 
-      <h2>Key Areas Where AI is Transforming the World</h2>
-      <div class="grid-container">
-        <div>
-          <a href="#"><img src="AI in robotics.png" alt="AI in Robotics"></a>
-          <p>🤖 Robotics: AI-driven robots assist in healthcare, manufacturing, and even space exploration.</p>
-        </div>
-        <div>
-          <a href="#"><img src="AI data.png" alt="AI Data"></a>
-          <p>📊 Data Science: Machine learning algorithms process data at lightning speed for insights and predictions.</p>
-        </div>
-        <div>
-          <a href="#"><img src="ai creativity.png" alt="AI Creativity"></a>
-          <p>🎨 Creativity: AI now paints, writes, and composes music — blurring lines between human and machine imagination.</p>
-        </div>
-      </div>
+  
+   <article1White><p> Deep learning takes this concept further by using neural networks with multiple hidden layers. These networks can process complex data like images, speech, and text by breaking them down into smaller components and learning hierarchical representations. When a deep learning model analyzes an image, it starts by detecting edges and shapes, then combines these features to recognize objects, and finally understands the complete scene context.
+ </p> </article1White>
+   <br> 
+    
+   <p1>
+ <a> <img src="https://coe.gsa.gov/coe/ai-guide-for-government/images/ai-life-cycle.png" alt="AI Development Cycle"> 
+ </p1> 
+
+ <h4> (AI Development and Training Process) </h4>
+    
+  
+ <br> <br> <br> <br>
+  
+  
+    
+    </article0>
     </section>
-
-    <!-- ===== SECTION 2 ===== -->
-    <section>
-      <h2>How Does AI Actually Work?</h2>
-      <article class="white">
-        <img src="neural network.png" alt="Neural Network">
-        <p>AI operates through algorithms that allow machines to learn from data. Neural networks, inspired by the human brain, process information through layers — recognizing patterns, predicting outcomes, and improving through experience.</p>
-      </article>
-
-      <article>
-        <img src="ai wave.jpg" alt="AI Wave">
-        <p>Deep Learning — a subset of AI — uses large neural networks trained on massive datasets. This technology powers everything from image recognition to voice assistants like Siri and Alexa.</p>
-      </article>
-    </section>
-
-    <!-- ===== SECTION 3 ===== -->
-    <section>
-      <h2>Challenges & The Future</h2>
-      <article>
-        <p>AI brings immense potential but also challenges — job automation, bias, and ethical dilemmas. As AI continues to evolve, our biggest responsibility is ensuring it aligns with humanity’s values and benefits all equally.</p>
-      </article>
-
-      <article class="white">
-        <img src="ai ethics.jpg" alt="AI Ethics">
-        <p>As AI becomes more integrated into daily life, global collaboration and regulation will play a key role in ensuring it remains safe, fair, and transparent.</p>
-      </article>
-
-      <footer>Created by Sakshi Kumari © 2025 | The Rise of AI Project</footer>
-    </section>
-
+  
+<br>
+<br>
+   
+<!--        <section> -->
+  
+<br>
+<br>
+  
+<!--     <footer>This website is built by Kris Kosta © 2022 &nbsp; <a href= "https://codepen.io/kjkosta">https://codepen.io/kjkosta </a></footer> -->
+  
+<!--     
+     </section> -->
+      
+      
+<!--   Parallax ending divs   -->
   </div>
 </div>
-
-</body>
-</html>
+    
+   
+    
+    </body>
+    </html>
