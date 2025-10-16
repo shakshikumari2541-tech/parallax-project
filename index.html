@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rise of Artificial Intelligence</title>
+
+  <!-- Futuristic Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #020d18;
+    overflow-x: hidden;
+    color: white;
+  }
+
+  /* ========== PARALLAX ========== */
+  .parallax {
+    perspective: 100px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1500px;
+  }
+
+  .p__layer {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+  }
+
+  .p__layer > img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .p__layer__0 img { margin-left: 550px; width: 80%; }
+  .p__layer__1 img { margin-left: 330px; width: 1000px; height: 500px; }
+  .p__layer__2 img { margin-left: 1300px; width: 1400px; height: 500px; }
+  .p__layer__3 img { margin-left: -150px; width: 2000px; height: 650px; }
+
+  .cover {
+    background: linear-gradient(#00111a, #000000, #0a84ff);
+    position: absolute;
+    height: fit-content;
+    z-index: 2;
+    top: 100%;
+    
+    left: 0;
+    right: 0;
+    margin-top: -20px;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #0a84ff;
+  }
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  /* ========== SECTIONS ========== */
+  section {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: black;
+    padding: 50px;
+    border-radius: 30px;
+    margin-top: 100px;
+    box-shadow: inset 10px 10px 20px rgba(0,0,0,1);
+  }
+
+  article {
+    background: linear-gradient(#00111a, #0d1f2d);
+    color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: inset 0 0 15px rgba(0,0,0,.6);
+    margin-bottom: 40px;
+  }
+
+  article.white {
+    background: white;
+    color: black;
+  }
+
+  article img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* GRID */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .grid-container div {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,1.2);
+    transition: transform 0.3s ease;
+  }
+
+  .grid-container div:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  /* TEXT STYLES */
+  h1, h2, h3, h4 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: #00ffff;
+  }
+
+  p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  footer {
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 60px;
+  }
+
+  /* RESPONSIVE */
+  @media(max-width:900px){
+    section { width: 90vw; padding: 20px; }
+    .grid-container { grid-template-columns: 1fr; }
+    p { font-size: 16px; }
+  }
+  </style>
+</head>
+<body>
+
+<!-- ===== PARALLAX LAYERS ===== -->
+<div class="parallax">
+  <div class="p__layer p__layer__0">
+    <img src="ai network background.jpg" alt="AI network background" />
+  </div>
+  <div class="p__layer p__layer__1">
+    <img src="brain circuit.png" alt="Brain Circuit" />
+  </div>
+  <div class="p__layer p__layer__2">
+    <img src="Robot silhouette.png" alt="Robot silhouette" />
+  </div>
+  <div class="p__layer p__layer__3">
+    <img src="digital city.jpeg" alt="Digital City" />
+  </div>
+
+  <div class="cover">
+
+    <br><br><br><br><br><br><br>
+
+    <!-- ===== SECTION 1 ===== -->
+    <section>
+      <h2>The Rise of Artificial Intelligence</h2>
+      <article>
+        <p>From self-learning machines to creative neural networks, Artificial Intelligence has rapidly transformed from science fiction into everyday reality. It is redefining how humans interact with technology — powering cars, conversations, art, and entire industries.</p>
+      </article>
+
+      <h2>Key Areas Where AI is Transforming the World</h2>
+      <div class="grid-container">
+        <div>
+          <a href="#"><img src="AI in robotics.png" alt="AI in Robotics"></a>
+          <p>🤖 Robotics: AI-driven robots assist in healthcare, manufacturing, and even space exploration.</p>
+        </div>
+        <div>
+          <a href="#"><img src="AI data.png" alt="AI Data"></a>
+          <p>📊 Data Science: Machine learning algorithms process data at lightning speed for insights and predictions.</p>
+        </div>
+        <div>
+          <a href="#"><img src="ai creativity.png" alt="AI Creativity"></a>
+          <p>🎨 Creativity: AI now paints, writes, and composes music — blurring lines between human and machine imagination.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2 ===== -->
+    <section>
+      <h2>How Does AI Actually Work?</h2>
+      <article class="white">
+        <img src="neural network.png" alt="Neural Network">
+        <p>AI operates through algorithms that allow machines to learn from data. Neural networks, inspired by the human brain, process information through layers — recognizing patterns, predicting outcomes, and improving through experience.</p>
+      </article>
+
+      <article>
+        <img src="ai wave.jpg" alt="AI Wave">
+        <p>Deep Learning — a subset of AI — uses large neural networks trained on massive datasets. This technology powers everything from image recognition to voice assistants like Siri and Alexa.</p>
+      </article>
+    </section>
+
+    <!-- ===== SECTION 3 ===== -->
+    <section>
+      <h2>Challenges & The Future</h2>
+      <article>
+        <p>AI brings immense potential but also challenges — job automation, bias, and ethical dilemmas. As AI continues to evolve, our biggest responsibility is ensuring it aligns with humanity’s values and benefits all equally.</p>
+      </article>
+
+      <article class="white">
+        <img src="ai ethics.jpg" alt="AI Ethics">
+        <p>As AI becomes more integrated into daily life, global collaboration and regulation will play a key role in ensuring it remains safe, fair, and transparent.</p>
+      </article>
+
+      <footer>Created by Sakshi Kumari © 2025 | The Rise of AI Project</footer>
+    </section>
+
+  </div>
+</div>
+
+</body>
+</html>
